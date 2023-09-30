@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    /* background-color: tan; */
+}
+
+#nav{
+    height: 100px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-bottom: 2px solid gray;
+}
+#nav h2{
+    font-size: 2vw;
+    font-weight: 600;
+
+}
+#navpart-2{
+    display: flex;
+    gap: 50px;
+}
+#navpart-2 h4{
+  font-size: 1vw;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 1vw;
+}
+
+#menu-icon{
+    font-size: 2vw;
+    display: none;
+}
+
+#navpart-2 button{
+
+    padding: 1vw 2vw;
+    border-radius: 1vw;
+    border: none;
+    background-color: lightseagreen;
+    color: #fff;
+    text-transform: uppercase;
+    
+
+}
+
+#content{
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+
+}
+
+#left{
+    width: 50%;
+    height: 100%;
+
+    padding: 3vw 4vw;
+}
+
+#left h1{
+    font-size: 4vw;
+    line-height: 3vw;
+
+}
+
+#left span{
+    color: lightseagreen;
+}
+#child-btn{
+    display: flex;
+    margin-top: 2vw;
+    gap: 20px;
+    
+}
+#child-btn img{
+    background-color: lightseagreen;
+    color: #fff;
+    border-radius: 50%;
+    padding: 1vw;
+}
+
+#child-btn h4{
+    margin-top: 1vw;
+}
+
+#btn-part button{
+    padding: 1vw 2vw;
+    margin-top: 4vw;
+    border-radius: 1vw;
+    background-color: lightseagreen;
+    color: #fff;
+    font-size: 1.5vw;
+    border: none;
+    
+}
+
+#right{
+    width: 50%;
+    height: 100%;
+    background-color: yellow;
+}
+
+#right img{
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width:600px) {
+
+    #main{
+        /* background-color: red; */
+    }
+
+    #nav h2{
+      font-size: 5vw;
+      font-weight: 800;
+    }
+
+    #navpart-2{
+        display: none;
+    }
+
+    #menu-icon{
+        display: block;
+        font-size: 7vw;
+    }
+
+    #content{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    #left{
+        height: 40%;
+        width: 100%;
+
+    }
+
+    #left h1{
+        font-size: 6vw;
+        line-height: 5vw;
+    }
+
+    #child-btn{
+        display: flex;
+        margin-top: 5vw;
+        gap: 20px;
+        
+    }
+
+    #child-btn img{
+        font-size: 3vw;
+        padding: 2vw;
+    }
+
+    #child-btn h4{
+        margin-top: 2vw;
+        font-size: 4vw;
+    }
+
+
+    #btn-part button{
+        padding: 2vw 4vw;
+        margin-top: 8vw;
+        border-radius: 1vw;
+        background-color: lightseagreen;
+        color: #fff;
+        font-size: 4vw;
+        border: none;
+        
+    }
+
+    #right{
+        height: 60%;
+        width: 100%;
+    }
+
+    #right img{
+        height: 100%;
+        width: 100%;
+    }
+
+   
+
+   
+    
+}
+
